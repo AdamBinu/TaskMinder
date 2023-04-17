@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+		}
+
+    form {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #ccc;
+			margin: 50px auto;
+			padding: 30px;
+			text-align: center;
+			width: 400px;
+		}
+
+		h2 {
+			color: #333;
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+
+		label {
+			font-size: 16px;
+			font-weight: bold;
+			color: #555;
+			display: block;
+			margin-top: 10px;
+			text-align: left;
+		}
+
+		input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+
+		#submit-btn {
+			background-color: #008CBA;
+			color: #fff;
+			padding: 14px 20px;
+			margin-top: 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+			width: 100%;
+			transition: all 0.3s ease-in-out;
+		}
+
+		#submit-btn:hover {
+			background-color: #006080;
+			transform: translateY(-2px);
+		}
+
+		.login-link {
+			display: block;
+			margin-top: 20px;
+			color: #555;
+			font-size: 16px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.login-link:hover {
+			color: #008CBA;
+		}
+	</style>
+</head>
+<body>
+	<form action="signup.php" method="post">
+		<h2>Sign Up</h2>
+		<label for="email">Email</label>
+		<input type="email" name="email" placeholder="Enter your email" required>
+
+		<label for="password">Password</label>
+		<input type="password"  name="password" placeholder="Enter your password" required>
+
+		<label for="confirm-password">Confirm Password</label>
+		<input type="password"  name="cpassword" placeholder="Confirm your password" required>
+
+		<button type="submit" id="submit-btn">Sign Up</button>
+		<a href="login.html" class="login-link">Already have an account? Login here.</a>
+	</form>
+</body>
+</html>
